@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anant Dhoundiyal - Contact</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e9ecef; color: #333; }
+        header { background: linear-gradient(to right, #004d7a, #008793); color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid #003350; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        header p { margin: 10px 0 0; font-size: 1.2em; opacity: 0.9; }
+        
+        nav { background-color: #343a40; text-align: center; padding: 15px 0; position: sticky; top: 0; }
+        nav a { color: #ffffff; margin: 0 15px; text-decoration: none; font-size: 1.1em; padding: 8px 15px; border-radius: 4px; transition: 0.3s; }
+        nav a:hover { background-color: #008793; }
+        nav a.active { background-color: #004d7a; font-weight: bold; border-bottom: 2px solid white; }
+        
+        .container { display: flex; max-width: 1100px; margin: 30px auto; gap: 20px; padding: 0 20px; }
+        .content { flex: 3; background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .sidebar { flex: 1; background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); height: fit-content; }
+        
+        h2 { color: #004d7a; border-bottom: 2px solid #008793; padding-bottom: 10px; }
+        footer { background-color: #343a40; color: #adb5bd; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em; }
+
+        /* --- SPECIFIC FORM STYLES --- */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures padding doesn't break width */
+            font-family: inherit;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #008793;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005f6b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Anant Dhoundiyal</h1>
+        <p>B.Tech CSE Student | Developer</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="interests.html">Interests</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to work together? Fill out the form below!</p>
+            
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="sidebar">
+            <h3>Direct Contact</h3>
+            <p><strong>Email:</strong><br>anant@example.com</p>
+            <p><strong>Location:</strong><br>Navi Mumbai, Maharashtra</p>
+            
+            <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+            
+            <h3>Socials</h3>
+            <p>LinkedIn / GitHub links can go here.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Anant Dhoundiyal. Built for a Student Project.</p>
+    </footer>
+
+</body>
+</html>
