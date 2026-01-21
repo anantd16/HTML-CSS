@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Nature Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fun Nature Gallery</h1>
+        <p>Explore beautiful free nature photos while learning CSS Grid!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Landscapes</a></li>
+            <li><a href="#">Forests</a></li>
+            <li><a href="#">Mountains</a></li>
+            <li><a href="#">Water</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="sidebar">
+            <h2>Filter Nature</h2>
+            <p>Try selecting:</p>
+            <ul>
+                <li><input type="checkbox" id="forest" name="forest"> <label for="forest">Forest</label></li>
+                <li><input type="checkbox" id="mountains" name="mountains"> <label for="mountains">Mountains</label></li>
+                <li><input type="checkbox" id="water" name="water"> <label for="water">Water</label></li>
+            </ul>
+
+            <h3>Why this is perfect for Grid class:</h3>
+            <ul>
+                <li><strong>Main</strong> is already a 2-column grid (sidebar + gallery).</li>
+                <li><strong>Gallery</strong> is a responsive grid of cards, perfect for practicing:
+                    <ul>
+                        <li>grid-template-columns</li>
+                        <li>grid-gap / gap</li>
+                        <li>justify-items / align-items</li>
+                    </ul>
+                </li>
+                <li>Hover effects make it interactive and fun.</li>
+                <li>Students can add their favorite nature images and experiment.</li>
+                <li>Sidebar filters give a “real gallery feel”.</li>
+            </ul>
+        </div>
+
+        <section class="gallery">
+            <div class="card">
+                <img src="https://images.stockcake.com/public/2/a/e/2ae44186-5aba-4a8e-b019-aee42219cc91_large/enchanted-forest-path-stockcake.jpg" alt="Forest Path">
+                <h4>Forest Path</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1603979649806-5299879db16b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBsYWtlfGVufDB8fDB8fHww" alt="Mountain Lake">
+                <h4>Mountain Lake</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/962097220/photo/dramatic-sunset-over-an-empty-road-in-utah.jpg?s=612x612&w=0&k=20&c=Hzr0NwZLQnNAm84ZIx5b58IWb5Bmv2PIHc2NyD1A2Qk=" alt="Sunset Road"
+                <h4>Sunset Road</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://images.stockcake.com/public/0/6/3/063273a8-0b34-4455-b646-d591777ef8a5_large/sunset-waterfall-view-stockcake.jpg" alt="Waterfall View">
+                <h4>Waterfall View</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/green-forest_1160-916.jpg?semt=ais_hybrid&w=740&q=80" alt="Green Forest"
+                <h4>Green Forest</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4A9eTOYVQ_y054taypuJICxNc9KOlZ7kyGQ&s" alt="Sunset Beach">
+                <h4>Sunset Beach</h4>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nature Gallery — CSS Grid Practice!</p>
+    </footer>
+
+</body>
+</html>
