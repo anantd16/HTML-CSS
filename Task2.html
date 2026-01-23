@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>Task 2: Traffic Signal</title>
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; height: 100vh; background-color: #f0f0f0; }
+
+        .signal-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .light {
+            transition: filter 0.3s ease, opacity 0.3s ease;
+            cursor: pointer;
+        }
+
+        .light-red:hover { opacity: 1; filter: drop-shadow(0 0 15px rgb(244, 48, 48)); }
+        .light-yellow:hover { opacity: 1; filter: drop-shadow(0 0 15px rgb(239, 239, 84)); }
+        .light-green:hover { opacity: 1; filter: drop-shadow(0 0 15px #31ee93); }
+    </style>
+</head>
+<body>
+    <svg class="signal-svg" viewBox="0 0 150 300" preserveAspectRatio="xMidYMid meet">
+        <rect x="25" y="20" width="100" height="260" fill="#333" rx="15" />
+        
+        <circle class="light light-red" cx="75" cy="70" r="30" fill="#ff4444" opacity="0.4" />
+        <circle class="light light-yellow" cx="75" cy="150" r="30" fill="#ffeb3b" opacity="0.4" />
+        <circle class="light light-green" cx="75" cy="230" r="30" fill="#00e676" opacity="0.4" />
+        
+        <text x="75" y="290" font-size="12" text-anchor="middle" fill="black">Hover lights to glow</text>
+    </svg>
+</body>
+</html>

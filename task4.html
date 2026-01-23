@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+html,body{
+  margin:0;
+  width:100%;
+  height:100%;
+}
+svg{
+  width:100vw;
+  height:100vh;
+}
+.face{
+  filter: drop-shadow(0 0 25px rgb(123, 255, 0));
+}
+</style>
+</head>
+
+<body>
+
+<svg viewBox="0 0 1920 1080">
+
+  <circle cx="960" cy="540" r="300" fill="yellow" class="face"/>
+
+  <circle cx="860" cy="470" r="20" fill="black">
+    <animate
+      attributeName="r"
+      values="20;20;5;20"
+      keyTimes="0;0.9;0.95;1"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1060" cy="470" r="20" fill="black">
+    <animate
+      attributeName="r"
+      values="20;20;5;20"
+      keyTimes="0;0.9;0.95;1"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <line x1="860" y1="650" x2="1060" y2="650"
+        stroke="black" stroke-width="20"/>
+
+</svg>
+
+</body>
+</html>
