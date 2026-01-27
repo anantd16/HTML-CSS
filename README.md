@@ -22,3 +22,33 @@
 <img width="1470" height="956" alt="Screenshot 2026-01-23 at 10 11 57 AM" src="https://github.com/user-attachments/assets/847bb9cf-0c65-4302-bc60-51fb4a29c456" />
 <img width="1470" height="956" alt="Screenshot 2026-01-23 at 10 11 45 AM" src="https://github.com/user-attachments/assets/33491480-711b-482a-a154-725aa5444d68" />
 
+Qna-
+1.⁠ ⁠Why website looks different on mobile and laptop?
+Because screen size and resolution are different.
+
+ 2.⁠ ⁠What changes after adding viewport?
+Page stops zooming out.
+
+ 3.⁠ ⁠Why text looks small without viewport?
+Because Browser assumes desktop width.
+
+ 4.⁠ ⁠How CSS detects screen size?
+ Using media queries.
+
+ 5.⁠ ⁠What happens when breakpoint is crossed?
+Layout, font size, or color changes.
+
+ 6.⁠ ⁠Why layout is device dependent?
+Because different devices have different screen sizes.
+
+ 7.⁠ ⁠Where is localStorage stored?
+It is inside browser storage.
+
+ 8.⁠ ⁠Why data remains after refresh?
+Because localStorage does not clear on refresh.
+
+ 9.⁠ ⁠How website works without internet?
+Logic runs inside browser.
+
+10.⁠ ⁠How learning platforms remember progress?
+They remember by storing data locally or in database.
