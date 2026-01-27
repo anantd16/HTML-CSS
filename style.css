@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    body {
+        background-color: #f69292;
+        font-size: 14px;
+    }
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        background-color: #8fee7e;
+        font-size: 16px;
+    }
+}
+
+/* desktop */
+@media (min-width: 901px) {
+    body {
+        background-color: #ca99f3;
+        font-size: 18px;
+    }
+}

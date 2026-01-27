@@ -1,71 +1,72 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Anant Dhoundiyal - Home</title>
-    <style>
-        /* CORE STYLES - COPY THIS CSS TO ALL PAGES IF YOU CHANGE IT */
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e9ecef; color: #333; }
-        header { background: linear-gradient(to right, #004d7a, #008793); color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid #003350; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        header p { margin: 10px 0 0; font-size: 1.2em; opacity: 0.9; }
-        
-        /* NAVIGATION */
-        nav { background-color: #343a40; text-align: center; padding: 15px 0; position: sticky; top: 0; }
-        nav a { color: #ffffff; margin: 0 15px; text-decoration: none; font-size: 1.1em; padding: 8px 15px; border-radius: 4px; transition: 0.3s; }
-        nav a:hover { background-color: #008793; }
-        nav a.active { background-color: #004d7a; font-weight: bold; border-bottom: 2px solid white; } /* Highlights current page */
-
-        /* LAYOUT */
-        .container { display: flex; max-width: 1100px; margin: 30px auto; gap: 20px; padding: 0 20px; }
-        .content { flex: 3; background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .sidebar { flex: 1; background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); height: fit-content; }
-        
-        h2 { color: #004d7a; border-bottom: 2px solid #008793; padding-bottom: 10px; }
-        footer { background-color: #343a40; color: #adb5bd; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em; }
-    </style>
+    <title>Browser Experiment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Anant Dhoundiyal</h1>
-        <p>B.Tech CSE Student | Developer</p>
-    </header>
+<h1>Browser Behavior Practice</h1>
 
-    <nav>
-    
-    <a href="index.html" class="active">Home</a>
-    <a href="education.html">Education</a>
-    <a href="achievements.html">Achievements</a>
-    <a href="interests.html">Interests</a>
-    <a href="contact.html">Contact</a>
+<section>
+    <h3>Form Data Test</h3>
 
-    </nav>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="saveData()">Save</button>
+    <button onclick="loadData()">Load</button>
 
-    <div class="container">
-        <div class="content">
-            <h2>About Me</h2>
-            <p>
-                Hello! I am <strong>Anant Dhoundiyal</strong>. I am currently pursuing my B.Tech in Computer Science at ITM Skills University. 
-            </p>
-            <p>
-                I have a strong foundation in Science and Mathematics, having completed my schooling with PCM. 
-                I enjoy balancing my academic pursuits with creative competitions and sports.
-            </p>
-            <p>
-                 My goal is to develop my skills in coding while continuing my passion for gaming and football.
-            </p>
-        </div>
+    <p id="show"></p>
+</section>
 
-        <div class="sidebar">
-            <h3>Quick Contact</h3>
-            <p><strong>Email:</strong> anant@example.com</p>
-            <p><strong>Location:</strong> India</p>
-        </div>
-    </div>
+<section>
+    <h3>Visit Counter</h3>
+    <p id="count"></p>
+</section>
 
-    <footer>
-        <p>© 2026 Anant Dhoundiyal. Built for a Student Project.</p>
-    </footer>
+<section>
+    <h3>My Observation</h3>
+
+    <p>
+        When viewport tag was not added, website looked very small on mobile.
+        After adding viewport, text became readable.
+    </p>
+
+    <p>
+        Layout changed when screen size was reduced.
+        Background color changed at different widths.
+    </p>
+
+    <p>
+        Data is stored in localStorage so it stays even after refresh
+        and works without internet.
+    </p>
+</section>
+
+<script>
+    function saveData() {
+        var n = document.getElementById("name").value;
+        localStorage.setItem("username", n);
+    }
+
+    function loadData() {
+        var data = localStorage.getItem("username");
+        document.getElementById("show").innerText =
+            "Saved name: " + data;
+    }
+
+    var visit = localStorage.getItem("visitCount");
+
+    if (visit == null) {
+        visit = 1;
+    } else {
+        visit = Number(visit) + 1;
+    }
+
+    localStorage.setItem("visitCount", visit);
+
+    document.getElementById("count").innerText =
+        "Page opened " + visit + " times";
+</script>
 
 </body>
 </html>
