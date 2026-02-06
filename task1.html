@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+    root {
+  --bg-color: #1c1b1b;
+  --text-color: #1d1b1b;
+  --card-color: #1a1919;
+}
+body.dark {
+  --bg-color: #00000a;
+  --text-color: #0c1ee3;
+  --card-color: #09e4f4;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  transition: 0.3s;
+}
+.card {
+  background-color: var(--card-color);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+</style>
+</head>
+
+
+<body>
+<h1>Task 1</h1>
+<button onclick="toggleTheme()">click me</button>
+<div class="card">
+  <p>This content changes color based on the theme.</p>
+</div>
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+}
+</script>
+</body>
+
+</html>
