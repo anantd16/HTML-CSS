@@ -52,3 +52,10 @@ Logic runs inside browser.
 
 10.⁠ ⁠How learning platforms remember progress?
 They remember by storing data locally or in database.
+
+
+mini project 6 feb output-
+<img width="1467" height="880" alt="Screenshot 2026-02-06 at 4 01 54 PM" src="https://github.com/user-attachments/assets/a99aee97-9ab3-4b73-9d45-d964aa85701c" />
+<img width="1464" height="880" alt="Screenshot 2026-02-06 at 4 02 19 PM" src="https://github.com/user-attachments/assets/18ee73cb-de17-49c3-bb38-99fc298a03d5" />
+
+
